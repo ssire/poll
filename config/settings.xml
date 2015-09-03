@@ -1,0 +1,10 @@
+<Settings>
+  <Sudoer>
+		<!-- please change "xsl-agent" password  -->
+		<!-- "xsl-agent" user is created by scripts/bootstrap.sh -->
+    <User>xsl-agent</User>
+    <Password>abcdef</Password>
+  </Sudoer>
+</Settings>
+
+

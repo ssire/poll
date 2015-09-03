@@ -1,0 +1,44 @@
+<Service>
+  <AuthorizationToken>REPLACE-WITH-YOUR-TOKEN</AuthorizationToken>
+  <Payload>
+    <Poll Lang="en">
+      <Id>sample</Id>
+      <Title>Sample Test Questionnaire</Title>
+      <Questions>
+        <Question Key="Museum">The visit of <Variable Name="museum">Name of Museum</Variable> was the best moment of our trip</Question>
+        <Question Key="Diner">The evening at <Variable Name="cafe">Name of Cafe</Variable> was the best moment of our trip</Question>
+        <Question Key="Guide">The explanations of <Variable Name="guide">Name of Guide</Variable> helped me to better appreciate my visit to <Variable Name="city">Name of City</Variable></Question>
+        <Question Key="Return">I will make another trip with <Variable Name="operator">Name of Tour Operator</Variable> in the future  </Question>
+        <Question Key="Suggestions">Please add some suggestions</Question>
+      </Questions>
+      <Plugins>
+        <Likert Keys="Museum Diner Guide Return">
+          <Option>
+            <Id>1</Id>
+            <Name>Strongly\ disagree</Name>
+          </Option>
+          <Option>
+            <Id>2</Id>
+            <Name>Disagree</Name>
+          </Option>
+          <Option>
+            <Id>3</Id>
+            <Name>Neutral</Name>
+          </Option>
+          <Option>
+            <Id>4</Id>
+            <Name>Agree</Name>
+          </Option>
+          <Option>
+            <Id>5</Id>
+            <Name>Strongly\ agree</Name>
+          </Option>
+        </Likert>
+        <MultiText Keys="Suggestions"/>
+      </Plugins>
+      <Bindings>
+        <Recommended Keys="Museum Diner Guide Return"/>
+      </Bindings>
+    </Poll>
+  </Payload>
+</Service>

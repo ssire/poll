@@ -1,0 +1,76 @@
+<!-- ======================================================================
+                              Oppidoc POLL mapping
+     ====================================================================== -->
+<site db="/db/sites/poll" confbase="/db/www/poll" startref="about" supported="login logout" key="poll" mode="dev" languages="en" default="en">
+  <!-- ********************** -->
+  <!-- **      orders      ** -->
+  <!-- ********************** -->
+  <collection name="orders" epilogue="home" method="POST">
+    <access>
+      <rule action="GET" role="g:poll" message="poll manager"/>
+      <rule action="POST" role="all"/>
+    </access>
+    <model src="modules/poll/admin.xql"/>
+    <view src="modules/poll/admin.xsl"/>
+    <action name="POST">
+      <model src="modules/poll/orders.xql"/>
+    </action>
+  </collection>
+  <!-- ********************** -->
+  <!-- **       forms      ** -->
+  <!-- ********************** -->
+  <collection name="forms">
+    <item epilogue="home">
+      <model src="modules/poll/run.xql"/>
+      <view src="modules/poll/run.xsl"/>
+    </item>
+  </collection>
+  <!-- ********************** -->
+  <!-- **     answers      ** -->
+  <!-- ********************** -->
+  <collection name="answers">
+    <item method="POST">
+      <model src="modules/poll/read.xql"/>
+      <action name="POST">
+        <model src="modules/poll/write.xql"/>
+      </action>
+    </item>
+  </collection>
+  <!-- ********************** -->
+  <!-- **  questionnaires  ** -->
+  <!-- ********************** -->
+  <collection name="questionnaires" method="POST">
+    <action name="POST">
+      <model src="modules/poll/questionnaires.xql"/>
+    </action>
+    <!-- You MUST manually create one entry per Questionnaire -->
+    <!-- TODO: implement epilogue="$2.xhtml" in Oppidum -->
+    <item name="sample" epilogue="sample.xhtml">
+      <model src="modules/poll/questionnaire.xql"/>
+      <view src="modules/poll/questionnaire.xsl"/>
+    </item>
+  </collection>
+  <!-- ****************** -->
+  <!-- **  guidelines  ** -->
+  <!-- ****************** -->
+  <item name="about" epilogue="home" resource="file:///views/about.xml">
+    <access>
+      <rule action="GET" role="all"/>
+    </access>
+  </item>
+  <!-- **************** -->
+  <!-- **  loopback  ** -->
+  <!-- **************** -->
+  <item name="loopback" method="POST">
+    <action name="POST">
+      <model src="modules/poll/loopback.xql"/>
+    </action>
+  </item>
+  <!-- *************************************** -->
+  <!-- **              test                 ** -->
+  <!-- **  (REMOVE from production server)  ** -->
+  <!-- *************************************** -->
+  <item name="test">
+    <item resource="file:///:self"/>
+  </item>
+</site>

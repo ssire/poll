@@ -1,0 +1,26 @@
+The 'Poll' document
+===================
+
+The 'Poll' document contains a questionnaire specification
+
+The 'Poll' document is to be POSTed to the /questionnaires URL to register/create a questionnaire which can then be used by a client application through the use of 'Order' documents
+
+Storage
+-------
+
+Original 'Poll' document sources are stored in '/db/sites/poll/questionaires' 
+
+For each 'Poll' document there is an hybdrib Oppidum mesh / XTiger template documetn stored inside '/db/www/poll/mesh'
+
+Retrieval
+---------
+
+GET /questionaires/{name} 
+
+Retrieves a sample XTiger Template (transformed by AXEL) generated with test data for testing
+
+GET /questionaires/{name}?o={hash}
+
+Retrieves the XTiger Template generated for the order with {hash} code to be used to generate the questionnaire page to be filled by an end-user
+
+

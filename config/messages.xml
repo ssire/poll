@@ -1,0 +1,23 @@
+<messages>
+  <info type="INFO">
+    <message>%s</message>
+  </info>
+  <!-- *********************************** -->
+  <!-- ********  POLL Messages *********** -->
+  <!-- *********************************** -->
+  <info type="CREATE-ORDER-SUCCESS" code="201">
+    <message>The form order has been recorded</message>
+  </info>
+  <info type="DELETE-ORDER-SUCCESS" code="200">
+    <message>The form order %s has been cancelled</message>
+  </info>
+  <info type="POLL-CONFIRM-FULL-SUBMISSION" code="202">
+    <message>You have completed the questionnaire, do you confirm that you want to submit it now and close it ? If you still want to edit it just cancel and you will still be able to complete it later.</message>
+  </info>
+  <info type="POLL-CONFIRM-PARTIAL-SUBMISSION" code="202">
+    <message>You haven't answered all of the questions. Do you confirm that you have finished to answer the questionnaire and that you want to submit it now ? This will close the questionnaire and you will no longer be able to complete it. Otherwise you can cancel and you will still be able to complete your answers later. Thank you for your contribution.</message>
+  </info>
+  <info type="ANSWERS-SUBMITTED" code="201" timeout="-1">
+    <message>Your answers have been registered, thank you for your contribution, the questionnaire is now closed</message>
+  </info>
+</messages>

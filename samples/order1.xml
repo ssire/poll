@@ -1,0 +1,16 @@
+<Service>
+  <AuthorizationToken>REPLACE-WITH-YOUR-TOKEN</AuthorizationToken>
+  <Payload>
+    <Order>
+      <Id>azerty</Id>
+      <Questionnaire lang="en">sample</Questionnaire>
+      <Variables>
+        <Variable Key="museum">Rijksmuseum</Variable>
+        <Variable Key="cafe">the Bulldog</Variable>
+        <Variable Key="guide">Tim Leary</Variable>
+        <Variable Key="city">Amsterdam</Variable>
+        <Variable Key="operator">Happy Trip</Variable>
+      </Variables>
+    </Order>
+  </Payload>
+</Service>

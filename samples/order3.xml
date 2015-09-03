@@ -1,0 +1,9 @@
+<Service>
+  <AuthorizationToken>REPLACE-WITH-YOUR-TOKEN</AuthorizationToken>
+  <Payload>
+    <Order>
+      <Id>azerty</Id>
+      <Close/>
+    </Order>
+  </Payload>
+</Service>

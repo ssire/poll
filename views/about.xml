@@ -1,0 +1,15 @@
+<site:view xmlns:site="http://oppidoc.com/oppidum/site" xmlns="http://www.w3.org/1999/xhtml">
+  <site:window><title>Oppidoc Questionnaire Platform</title></site:window>
+  <site:title><h1>Oppidoc Questionnaire Platform</h1></site:title>
+  <site:content>
+    <fieldset class="bubble">
+      <legend>How to use this application ?</legend>
+      <p>To use this application you should have received an e-mail with a link pointing to an online feedback form.</p>
+      <p>Click on the link to open the form and complete it directly inside your browser then hit the "Submit" button.</p>
+      <p>You can edit your feedback form at anytime.</p>
+      <p>Once your feedback is submitted, the questionnaire will no longer be enabled. This may be immediate or it may take several days depending of the campaign.</p>
+      <p>This application has been developped initially by Stéphane Sire at Oppidoc in the framework of the CoachCom2020 project.</p>
+      <p>Send remarks about this application to Stéphane Sire: <a href="mailto:s.sire@oppidoc.fr?subject=SME Instrument Feedback application">s.sire@oppidoc.fr</a></p>
+    </fieldset>
+	</site:content>
+</site:view>

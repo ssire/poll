@@ -1,0 +1,20 @@
+The 'Order' document
+====================
+
+The 'Order' document instructs the Poll application to generate a customized questionnaire
+
+The 'Order' document is to be POSTed to the /orders URL
+
+Storage
+-------
+
+The 'Order' documents are stored inside the '/db/sites/poll/forms/{name}/{YYYY}/{MM}' collection
+
+where 
+
+{name} is the questionnaire name
+{YYYY} is the year the 'Order' document has been posted
+{MM} is the month the 'Order' document has been posted
+
+
+

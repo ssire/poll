@@ -1,0 +1,24 @@
+<Services>
+  <Providers>
+    <Service>
+      <Id>poll</Id>
+      <Name Lang="en">Poll</Name>
+      <AuthorizationToken>REPLACE-WITH-YOUR-TOKEN</AuthorizationToken>
+      <EndPoint>
+        <Id>poll.orders</Id>
+        <Name Lang="en">Orders</Name>
+      </EndPoint>
+      <EndPoint>
+        <Id>poll.questionnaires</Id>
+        <Name Lang="en">Questionnaires</Name>
+      </EndPoint>
+      <!-- Can be REMOVED : testing purpose -->
+      <EndPoint>
+        <Id>poll.loopback</Id>
+        <Name Lang="en">Loopback</Name>
+      </EndPoint>
+    </Service>
+  </Providers>
+  <Consumers/>
+  <Hooks/>
+</Services>

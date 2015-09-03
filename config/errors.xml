@@ -1,0 +1,38 @@
+<errors>
+  <error type="CUSTOM" code="500">
+    <message lang="en">%s</message>
+  </error>
+  <!-- ****************************************** -->
+  <!-- ************* POLL Errors **************** -->
+  <!-- ****************************************** -->
+  <error type="ORDER-NOT-FOUND" code="404">
+    <message lang="en">Form %s not found. This questionnaire may have been removed because it was in the system for a too long time or it has never existed.</message>
+  </error>
+  <error type="FORM-WRITE-FORBIDDEN" code="409">
+    <message lang="en">The questionnaire cannot be submitted anymore</message>
+  </error>
+  <error type="POLL-EMPTY-SUBMISSION" code="409">
+    <message>You must answer at least to one question to submit and close the questionnaire.</message>
+  </error>
+  <!-- ****************************************** -->
+  <!-- *********** Services Errors ************** -->
+  <!-- ****************************************** -->
+  <error type="SERVICE-INTERNAL-ERROR" code="500">
+    <message lang="en">Error while contacting %s, the service returned : %s</message>
+  </error>
+  <error type="SERVICE-NOT-RESPONDING" code="404">
+    <message lang="en">Impossible to contact %s : the service is not responding. You may try again later or please contact a database administrator.</message>
+  </error>
+  <error type="SERVICE-ERROR" code="500">
+    <message lang="en">Error while contacting %s : %s</message>
+  </error>
+  <error type="SERVICE-MALFORMED-URL" code="500">
+    <message lang="en">Error while contacting %s : malformed URL "%", ask a system administrator to check the configuration</message>
+  </error>
+  <error type="SERVICE-MISSING" code="500">
+    <message lang="en">Impossible to contact %s : the service configuration is incomplete, ask a system administrator to fix it</message>
+  </error>
+  <error type="SERVICE-FORBIDDEN" code="401">
+    <message lang="en">Impossible to call %s : authorization refused</message>
+  </error>
+</errors>
